@@ -54,14 +54,38 @@ header{
 .home h2{
     font-size: 30px;
 }
-.home a{
-    display: inline-block;
-    border: 1px solid #fff;
-    background-color: #fff;
-}
 .cta{
-    display: inline-block;
-    justify-content: center;
-    gap: 5px;
+    display: inline-flex;
     text-align: center;
+    padding: 5px;
+    gap: 10px;
+}
+.cta-primary{
+    display: inline-block;
+    padding: 10px;
+    justify-content: center;
+    background: #FF7A00;
+    border: #FF7A00;
+    color: #E6E8EB;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.cta-primary:hover{
+
+}
+.cta-secondary{
+    text-decoration: none;
+    border: 1px solid #FF7A00;
+    color: #E6E8EB;
+    border-radius: 8px;
+    justify-content: center;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 300;
+}
+.cta-secondary:hover{
+    background-color: #FF7A00;
+    opacity: 80;
+
 }

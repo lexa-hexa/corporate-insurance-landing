@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Insurance Solutions | Corporate Landing</title>
+    <title>BLACK MESA</title>
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80">
 <!-- Header / Navigation -->
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top py-2" data-bs-theme="dark" >
+        <nav class="navbar navbar-expand-lg fixed-top py-2" data-bs-theme="dark" >
             <div class="container-fluid px-4">
 
                 <!-- Logo -->
@@ -49,87 +49,115 @@
 
         <!-- Hero Bölümü-->
         <section class="home" id="home">
-            <h2>Enterprise Insurance Solutions for Modern Businesses</h2>
-            <p>Black Mesa provides reliable, data-driven insurance solutions tailored for corporate organizations.</p>
-            <div class="cta">
-                <a href="#contact" class="cta-primary">Transmit Request</a>
-                <a href="#contact" class="cta-secondary">Contact Our Team</a>
+            <div class="hero-media">
+                <div class="hero-slide is-active"><img src="/img/slider1.png" alt="Black Mesa facility exterior"></div>
+                <div class="hero-slide"><img src="/img/slider2.png" alt="Black Mesa research laboratory interior"></div>
+                <div class="hero-slide"><img src="/img/slider3.png" alt="High-security containment sector at Black Mesa"></div>
+                <div class="hero-slide"><img src="/img/slider4.png" alt="Industrial operations and control systems at Black Mesa"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content is-animating">
+                <h2>High-Security Research and Industrial Operations</h2>
+                <p>Black Mesa operates advanced facilities focused on experimental research, energy systems, and controlled industrial processes.</p>
+                <div class="cta">
+                    <a href="#contact" class="cta-primary">Transmit Request</a>
+                    <a href="#contact" class="cta-secondary">Contact Our Team</a>
+                </div>
             </div>
         </section>
 
         <!-- Solutions Bölümü-->
         <section class="solutions" id="solutions">
-            <h2>Operational Modules</h2>
-            <div class="solutions-grid">
-                <article>
-                    <h3>Hazard Control</h3>
-                    <p>
-                        Advanced systems designed to identify, isolate, and neutralize high-risk scenarios before escalation.
-                    </p>
-                </article>
+            <div class="container">
+                <h2>Operational Modules</h2>
+                <p class="section-lead">Modular coverage engineered for high-risk operations.</p>
+                <div class="solutions-grid">
+                    <article>
+                        <h3>Hazard Control</h3>
+                        <p>
+                            Advanced systems designed to identify, isolate, and neutralize high-risk scenarios before escalation.
+                        </p>
+                    </article>
 
-                <article>
-                    <h3>Facility Protection</h3>
-                    <p>
-                        Protect critical infrastructure and assets through layered security and control protocols.
-                    </p>
-                </article>
+                    <article>
+                        <h3>Facility Protection</h3>
+                        <p>
+                            Protect critical infrastructure and assets through layered security and control protocols.
+                        </p>
+                    </article>
 
-                <article>
-                    <h3>Containment Protocols</h3>
-                    <p>
-                        Custom-built response frameworks engineered to maintain stability in unpredictable environments.
-                    </p>
-                </article>
+                    <article>
+                        <h3>Containment Protocols</h3>
+                        <p>
+                            Custom-built response frameworks engineered to maintain stability in unpredictable environments.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
 
         <!-- About Bölümü-->
         <section class="about" id="about">
-            <h2>System Integrity</h2>
-            <p>Black Mesa operates on strict protocols, measured decisions, and continuous oversight. Every process is designed for stability under pressure.</p>
-            <ul>
-                <li>Protocol-Driven Operations</li>
-                <li>Layered Control & Redundancy</li>
-                <li>Continuous Monitoring Systems</li>
-            </ul>
-            <p>When conditions change, the system adapts.</p>
+            <div class="container">
+                <div class="about-grid">                                
+                    <div class="about-media">
+                        <img src="/img/about.png" alt="Controlled Research Environment">
+                    </div>
+                    <div class="about-content">
+                        <h2>System Integrity</h2>
+                        <p>Black Mesa operates on strict protocols, measured decisions, and continuous oversight. Every process is designed for stability under pressure.</p>
+                        <ul>
+                            <li>Protocol-Driven Operations</li>
+                            <li>Layered Control & Redundancy</li>
+                            <li>Continuous Monitoring Systems</li>
+                        </ul>
+                        <p>When conditions change, the system adapts.</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
 
         <!-- Contact Bölümü-->
         <section class="contact" id="contact">
-            <h2>Contact Protocol</h2>
-            <p>Submit a request through the secure channel. Our team will respond after verification.</p>
-            <form method="post" id="contactForm">
+            <div class="container">
+                <h2>Contact Protocol</h2>
+                <p>Submit a request through the secure channel. Our team will respond after verification.</p>
+                <form method="post" id="contactForm" class="form">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="fullname">Company / Organization Name</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Business Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="requestType">Request Type</label>
+                        <select name="requestType" id="requestType" required>
+                            <option value="" disabled selected>Select request type</option>
+                            <option value="generalInquiry">General Inquiry</option>
+                            <option value="incidentReport">Incident Report</option>
+                            <option value="containmentSupport">Containment Support</option>
+                            <option value="partnershipRequest">Partnership Request</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required rows="6"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
 
-                <label for="fullname">Company / Organization Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-
-                <label for="email">Business Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="requestType">Request Type</label>
-                <select name="requestType" id="requestType" required>
-                    <option value="" disabled selected>Select request type</option>
-                    <option value="generalInquiry">General Inquiry</option>
-                    <option value="incidentReport">Incident Report</option>
-                    <option value="containmentSupport">Containment Support</option>
-                    <option value="partnershipRequest">Partnership Request</option>
-                </select>
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" required rows="5"></textarea>
-
-                <button type="submit">Submit</button>
-
-            </form>
+                </form>
+            </div>
         </section>
-
     </main>
     
     <!-- Footer Bölümü-->
     <footer>
-        <p>© 2025 Black Mesa</p>
+        <p>© 2026 BL<span class="lambda">λ</span>CK MESA</p>
         <p>Enes YEREBAKAN</p>
     </footer>
 
